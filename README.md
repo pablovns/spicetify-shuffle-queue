@@ -34,24 +34,35 @@ If you manually queue up 10–20 songs for an upcoming session and want them in 
 ## 📦 Installation
 
 ### Option 1: Via Spicetify Marketplace (Recommended)
-1. Open Spotify with **Spicetify Marketplace** installed.
-2. Go to the **Marketplace** tab in the sidebar.
-3. Switch to the **Extensions** tab and search for `Shuffle Next in Queue`.
-4. Click **Install** and reload Spotify.
+
+1. Open Spotify and go to the **Marketplace** tab in the left sidebar.
+2. Under **Extensions**, search for `Shuffle Next in Queue`.
+3. Click **Install** and reload Spotify.
+
+> [!TIP]
+> **Immediate Install via Custom Repositories:**  
+> If the global Marketplace indexer hasn't synced yet, you can load it instantly:
+> 1. In Marketplace, click the ⚙️ **Settings** icon (top right).
+> 2. Paste `https://github.com/pablovns/spicetify-shuffle-queue` under **Custom Repositories**.
+> 3. The card will appear right away in your Extensions list!
 
 ---
 
-### Option 2: Manual Installation via CLI
+### Option 2: Quick CLI Installation
 
-1. Download or copy `shuffle-queue.js` into your Spicetify Extensions folder:
-   - **Linux / macOS**: `~/.config/spicetify/Extensions/`
-   - **Windows**: `%appdata%\spicetify\Extensions\`
+#### Linux / macOS:
+```bash
+curl -fsSL https://raw.githubusercontent.com/pablovns/spicetify-shuffle-queue/main/shuffle-queue.js -o ~/.config/spicetify/Extensions/shuffle-queue.js
+spicetify config extensions shuffle-queue.js
+spicetify apply
+```
 
-2. Enable the extension via Spicetify CLI:
-   ```bash
-   spicetify config extensions shuffle-queue.js
-   spicetify apply
-   ```
+#### Windows (PowerShell):
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/pablovns/spicetify-shuffle-queue/main/shuffle-queue.js" -OutFile "$env:APPDATA\spicetify\Extensions\shuffle-queue.js"
+spicetify config extensions shuffle-queue.js
+spicetify apply
+```
 
 ---
 

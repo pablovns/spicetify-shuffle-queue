@@ -1,0 +1,22 @@
+{
+  "name": "spicetify-shuffle-queue",
+  "version": "1.0.1",
+  "description": "True zero-bias shuffle for only user-enqueued tracks in 'Next in queue' without altering playback context or playing track.",
+  "main": "shuffle-queue.js",
+  "scripts": {
+    "test": "node --test tests/shuffle-queue.test.js"
+  },
+  "keywords": [
+    "spicetify",
+    "spicetify-extensions",
+    "spotify",
+    "queue",
+    "shuffle"
+  ],
+  "author": "Pablo Souza <pablovcs@smartbr.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablovns/spicetify-shuffle-queue.git"
+  }
+}
