@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Shuffle Next in Queue",
+    "description": "True zero-bias shuffle for only user-enqueued tracks in 'Next in queue' without altering playback context or playing track.",
+    "preview": "assets/preview.png",
+    "main": "shuffle-queue.js",
+    "readme": "README.md",
+    "branch": "main",
+    "authors": [
+      {
+        "name": "pablovns",
+        "url": "https://github.com/pablovns"
+      }
+    ],
+    "tags": ["queue", "shuffle", "player", "tools"]
+  }
+]
